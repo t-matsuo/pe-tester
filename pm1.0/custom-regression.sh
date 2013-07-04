@@ -22,7 +22,7 @@
 #  # create_mode=true ./custom-regression.sh -i your-xml-directory
 
 core=`dirname $0`
-. $core/regression.core-1.0.sh
+. $core/regression.core.sh
 
 for i in `ls $io_dir/*.xml`; do
     testbase=`basename $i | sed -e "s/\.xml$//g"`
